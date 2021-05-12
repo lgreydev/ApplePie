@@ -1,0 +1,97 @@
+//
+//  ListOfWords.swift
+//  ApplePie
+//
+//  Created by Sergey Lukaschuk on 12.05.2021.
+//
+
+import Foundation
+
+
+
+struct ListOfWords {
+    
+  let city = [
+    "Tokyo",
+    "Delhi",
+    "Shanghai",
+    "Sao Paulo",
+    "Mexico City",
+    "Cairo",
+    "Mumbai",
+    "Beijing",
+    "Dhaka",
+    "Osaka",
+    "New York",
+    "Karachi",
+    "Buenos Aires",
+    "Chongqing",
+    "Istanbul",
+    "Calcutta",
+    "Manila",
+    "Lagos",
+    "Rio de Janeiro",
+    "Tianjin",
+    "Kinshasa",
+    "Guangzhou",
+    "Los Angeles",
+    "Moscow",
+    "Shenzhen",
+    "Lahore",
+    "Bangalore",
+    "Paris",
+    "Bogota",
+    "Jakarta",
+    "Chennai",
+    "Lima",
+    "Bangkok",
+    "Seoul",
+    "Nagoya",
+    "Hyderabad",
+    "London",
+    "Tehran",
+    "Chicago",
+    "Chengdu",
+    "Nanking",
+    "Wuhan",
+    "Luanda",
+    "Ahmedabad",
+    "Kuala lumpur",
+    "Xi'an",
+    "Hong Kong",
+    "Dongguan",
+    "Hangzhou",
+    "Foshan",
+    "Shenyang",
+    "Riyadh",
+    "Baghdad",
+    "Santiago",
+    "Surat",
+    "Madrid",
+    "Suzhou",
+    "Pune",
+    "Harbin",
+    "Houston",
+    "Dallas",
+    "Toronto",
+    "Dar es Salaam",
+    "Miami",
+    "Belo Horizonte",
+    "Singapore",
+    "Philadelphia",
+    "Atlanta",
+    "Fukuoka",
+    "Khartoum",
+    "Barcelona",
+    "Johannesburg",
+    "Petersburg",
+    "Qingdao",
+    "Dalian",
+    "Washington",
+    "Yangon",
+    "Alexandria",
+    "Jinan",
+    "Guadalajara"
+   ]
+}
+
