@@ -10,11 +10,38 @@ import Foundation
 
 class Game  {
     
-    let listOfWords = ListOfWords()
+    private let listOfWords = ListOfWords()
+    private(set) lazy var word: String = listOfWords.city.randomElement()!
+    private(set) var incorrectMovesRemaining: Int = 7
+    private var guessedLetters: [Character] = []
+    private(set) var totalWins = 0
+    private(set) var totalLosses = 0
     
-    var word: String?
     
-    var incorrectMovesRemaining: Int?
+    var guessedWord: String {
+        print(word)
+        
+        var wordLabel = ""
+        
+        for letter in guessedLetters {
+            wordLabel.append(letter)
+        }
+        
+        return wordLabel
+    }
     
     
+    func playerGuessed(letter: Character) {
+        let lowerWord = word.lowercased()
+        let loverLetter = letter.lowercased()
+        
+        if !lowerWord.contains(loverLetter) {
+            guard incorrectMovesRemaining > 0 else { fatalError("Game Over!") }
+            incorrectMovesRemaining -= 1
+        } else {
+            guessedLetters.append(letter)
+            print("Guessed letter - \(letter.lowercased())")
+            print(guessedLetters)
+        }
+    }
 }

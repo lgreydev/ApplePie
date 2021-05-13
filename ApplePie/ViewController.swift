@@ -18,50 +18,30 @@ class ViewController: UIViewController {
     
     // MARK: - Game Setting
     let game = Game()
-    var incorrectMovesAllowed = 7
-    var totalWins = 0
-    var totalLosses = 0
-    
-    
-    // MARK: - New Round
-    func newRound() {
-        game.incorrectMovesRemaining = incorrectMovesAllowed
-        game.word = game.listOfWords.city[0] // Tokyo
-        updateUI()
-    }
     
     
     // MARK: - Update UI
     func updateUI() {
-        let imageName = "Tree \(game.incorrectMovesRemaining ?? 0)"
+        let imageName = "Tree \(game.incorrectMovesRemaining)"
         treeImageView.image = UIImage(named: imageName)
-        scoreLabel.text = "Win: \(totalWins)       Losses: \(totalLosses)"
+        scoreLabel.text = "Win: \(game.totalWins)       Losses: \(game.totalLosses)"
+        correctWordLabel.text = game.guessedWord
     }
 
 
     // MARK: - Action
     @IBAction func pressedLetterButton(_ sender: UIButton) {
-        incorrectMovesAllowed -= 1
-        identificationLetter(of: sender)
-        newRound()
-        
+        sender.isEnabled = false
+        let letter = sender.title(for: .normal)!
+        game.playerGuessed(letter: Character(letter))
+        updateUI()
     }
     
-    
-    func identificationLetter(of button: UIButton) {
-        button.isEnabled = false
-        for city in game.listOfWords.city {
-            if button.titleLabel?.text == city.first?.description {
-                correctWordLabel.text = city
-            }
-        }
-    }
-    
-    
+
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        newRound()
+        updateUI()
     }
 }
 
