@@ -25,9 +25,17 @@ class ViewController: UIViewController {
         let imageName = "Tree \(game.incorrectMovesRemaining)"
         treeImageView.image = UIImage(named: imageName)
         scoreLabel.text = "Win: \(game.totalWins)       Losses: \(game.totalLosses)"
-        correctWordLabel.text = game.guessedWord
+        updateCorrectWordLabel()
     }
 
+    func updateCorrectWordLabel() {
+        var displayWord = [String]()
+        for latter in game.guessedWord {
+                displayWord.append(String(latter))
+        }
+        correctWordLabel.text = displayWord.joined(separator: " ")
+    }
+    
 
     // MARK: - Action
     @IBAction func pressedLetterButton(_ sender: UIButton) {

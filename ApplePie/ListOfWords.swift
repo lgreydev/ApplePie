@@ -57,7 +57,6 @@ struct ListOfWords {
     "Luanda",
     "Ahmedabad",
     "Kuala lumpur",
-    "Xi'an",
     "Hong Kong",
     "Dongguan",
     "Hangzhou",
