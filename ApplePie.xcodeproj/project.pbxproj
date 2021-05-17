@@ -19,7 +19,7 @@
 		5E57A79C2652560F00255BD4 /* screenshot-002.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E57A7982652560E00255BD4 /* screenshot-002.png */; };
 		5E57A79D2652560F00255BD4 /* screenshot-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E57A7992652560F00255BD4 /* screenshot-001.png */; };
 		5E57A79E2652560F00255BD4 /* screenshot-003.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E57A79A2652560F00255BD4 /* screenshot-003.png */; };
-		5E57A79F2652560F00255BD4 /* screenshot-004.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E57A79B2652560F00255BD4 /* screenshot-004.png */; };
+		5E57A7A126526B4200255BD4 /* screenshot-005.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E57A7A026526B4200255BD4 /* screenshot-005.png */; };
 		5E7EBF64264C2FF3002C94A8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EBF63264C2FF3002C94A8 /* Game.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		5E57A7982652560E00255BD4 /* screenshot-002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-002.png"; sourceTree = "<group>"; };
 		5E57A7992652560F00255BD4 /* screenshot-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-001.png"; sourceTree = "<group>"; };
 		5E57A79A2652560F00255BD4 /* screenshot-003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-003.png"; sourceTree = "<group>"; };
-		5E57A79B2652560F00255BD4 /* screenshot-004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-004.png"; sourceTree = "<group>"; };
+		5E57A7A026526B4200255BD4 /* screenshot-005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-005.png"; sourceTree = "<group>"; };
 		5E7EBF63264C2FF3002C94A8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,7 @@
 				5E57A7992652560F00255BD4 /* screenshot-001.png */,
 				5E57A7982652560E00255BD4 /* screenshot-002.png */,
 				5E57A79A2652560F00255BD4 /* screenshot-003.png */,
-				5E57A79B2652560F00255BD4 /* screenshot-004.png */,
+				5E57A7A026526B4200255BD4 /* screenshot-005.png */,
 			);
 			path = ScreenShot;
 			sourceTree = "<group>";
@@ -157,11 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E41F158264ADBEB005299DA /* .gitignore in Resources */,
+				5E57A7A126526B4200255BD4 /* screenshot-005.png in Resources */,
 				5E41F150264ADB8B005299DA /* LaunchScreen.storyboard in Resources */,
 				5E57A79D2652560F00255BD4 /* screenshot-001.png in Resources */,
 				5E57A79E2652560F00255BD4 /* screenshot-003.png in Resources */,
 				5E41F15B264ADC5C005299DA /* README.md in Resources */,
-				5E57A79F2652560F00255BD4 /* screenshot-004.png in Resources */,
 				5E41F14D264ADB8B005299DA /* Assets.xcassets in Resources */,
 				5E57A79C2652560F00255BD4 /* screenshot-002.png in Resources */,
 				5E41F14B264ADB88005299DA /* Main.storyboard in Resources */,
