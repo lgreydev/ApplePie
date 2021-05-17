@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     // MARK: - Game init
+    /// Model start game
     let game = Game()
     
     
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
   
     // MARK: - Update UI
+    /// Refreshes all UI on the screen
     func updateUI() {
         game.state()
         let imageName = "Tree \(game.incorrectMovesRemaining)"
@@ -29,9 +30,9 @@ class ViewController: UIViewController {
         scoreLabel.text = "Win: \(game.totalWins)       Losses: \(game.totalLosses)"
         updateCorrectWordLabel()
         buttonOn()
-        
     }
-
+    
+    /// Refreshes WordLabel
     func updateCorrectWordLabel() {
         var displayWord = [String]()
         for latter in game.guessedWord {
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
     
     
     // MARK: - Turn on Button
+    /// Enable all buttons
     func buttonOn() {
         for button in letterButtons {
             if game.onButton {

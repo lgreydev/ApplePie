@@ -11,12 +11,14 @@ import Foundation
 class Game  {
     
     // MARK: - Properties
-    private let listOfWords = ListOfWords()
+    private let listOfWords = ListOfWords() // List of words
     private(set) lazy var word: String = listOfWords.city.randomElement()!
-    private(set) var incorrectMovesRemaining: Int = 7
-    private var guessedLetters: [Character] = []
-    private(set) var totalWins = 0
-    private(set) var totalLosses = 0
+    private(set) var incorrectMovesRemaining: Int = 7 // the count of apples on the tree
+    private var guessedLetters: [Character] = [] //
+    private(set) var totalWins = 0 // score for win
+    private(set) var totalLosses = 0 // score for losses
+    
+    /// Property for toggling buttons
     var onButton = false
     
     
@@ -32,6 +34,8 @@ class Game  {
     
     
     // MARK: - Count Apples
+    /// Counting the number of apples on a tree
+    /// - Parameter letter: the current letter pressed
     func playerGuessed(letter: Character) {
         let lowerWord = word.lowercased()
         let loverLetter = letter.lowercased()
@@ -44,6 +48,7 @@ class Game  {
     
     
     // MARK: - State Game
+    // Checking the state of the game for winning or losing
     func state() {
         print(word, guessedWord)
         let newWord = word.filter { !$0.isWhitespace }.lowercased()
@@ -58,6 +63,7 @@ class Game  {
     
     
     // MARK: - New Round
+    // Start a new round
     func newRound() {
         word = listOfWords.city.randomElement()!
         guessedLetters = [Character]()
