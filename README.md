@@ -11,7 +11,7 @@ You have to guess the hidden word having a list of letters. if you are wrong, yo
 
 
 #### Portrait device orientation
-<img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-001.png" width="250"><img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-002.png" width="250"><img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-003.png" width="250">
+<img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-001.png" width="300"><img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-002.png" width="300"><img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-003.png" width="300">
 
 #### Landscape device orientation
 <img src="https://github.com/lgreydev/ApplePie/blob/main/ScreenShot/screenshot-006.png" hight="190">
