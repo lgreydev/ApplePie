@@ -13,7 +13,7 @@ struct ListOfWords {
    
     // States of the United States
     // The model does not work with two-word sentences
-  let city = [
+    let city = [
     "Alabama",
     "Alaska",
     "Arizona",

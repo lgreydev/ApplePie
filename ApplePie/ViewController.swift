@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     // MARK: - Game init
     /// Model start game
-    let game = Game()
+    private let game = Game()
     
     
     // MARK: - IB Outlet
@@ -20,10 +20,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var letterButtons: [UIButton]!
     
+    
+    // MARK: - ViewDidLoad
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+    }
+    
   
     // MARK: - Update UI
     /// Refreshes all UI on the screen
-    func updateUI() {
+    private func updateUI() {
         game.state()
         let imageName = "Tree \(game.incorrectMovesRemaining)"
         treeImageView.image = UIImage(named: imageName)
@@ -33,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     /// Refreshes WordLabel
-    func updateCorrectWordLabel() {
+    private func updateCorrectWordLabel() {
         var displayWord = [String]()
         for latter in game.guessedWord {
             displayWord.append(String(latter))
@@ -44,7 +51,7 @@ class ViewController: UIViewController {
     
     // MARK: - Turn on Button
     /// Enable all buttons
-    func buttonOn() {
+    private func buttonOn() {
         for button in letterButtons {
             if game.onButton {
                 button.isEnabled = true
@@ -59,13 +66,6 @@ class ViewController: UIViewController {
         sender.isEnabled = false
         let letter = sender.title(for: .normal)!
         game.playerGuessed(letter: Character(letter))
-        updateUI()
-    }
-    
-
-    // MARK: - ViewDidLoad
-    override func viewDidLoad() {
-        super.viewDidLoad()
         updateUI()
     }
 }
